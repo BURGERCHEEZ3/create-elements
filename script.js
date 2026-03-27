@@ -18,13 +18,21 @@ function start() {
 
     //prompt for name
     let userName = prompt("enter your name");
+    console.log(userName)
+    addName(userName);
+
+    //getting last name
+    let userLastName = prompt("enter your last name");
+    console.log(userLastName + userName);
+    addName(userName);
+    addName(userLastName);
 }
-function addName(newName) {
-     let h2 = document.createElement("h2")
+
+function addName(newName, LastName) {
+     let h2 = document.createElement("h2");
 
      h2.innerText = newName;
 
      document.body.appendChild(h2);
 
-     username
 }
